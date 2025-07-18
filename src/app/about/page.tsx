@@ -5,10 +5,18 @@ import { Button } from "@/components/ui/button";
 import rahulImage from "../../assets/rahul.jpeg";
 import darshanImage from "../../assets/darshan.jpeg";
 import dhavalImage from "../../assets/dhaval.jpeg";
+import { MorphingText } from "@/components/magicui/morphing-text";
+import { BorderBeam } from "@/components/magicui/border-beam";
+import { Particles } from "@/components/magicui/particles";
+import { useState } from "react";
+import { TextAnimate } from "@/components/magicui/text-animate";
+import { LineShadowText } from "@/components/magicui/line-shadow-text";
+import { SparklesText } from "@/components/magicui/sparkles-text";
 
 interface Profile {
   id: string;
   name: string;
+  surname: string;
   role: string;
   tagline: string;
   image: any;
@@ -22,7 +30,8 @@ export function AboutSection({ onProfileClick }: AboutSectionProps) {
   const profiles: Profile[] = [
     {
       id: "darshan",
-      name: "Darshan Hingu",
+      name: "Darshan ",
+      surname: "Hingu",
       role: "Backend Developer",
       tagline:
         "Crafting robust, scalable backends that power seamless digital experiences",
@@ -30,7 +39,8 @@ export function AboutSection({ onProfileClick }: AboutSectionProps) {
     },
     {
       id: "rahul",
-      name: "Rahul Kambariya",
+      name: "Rahul ",
+      surname: "Kambariya",
       role: "Front-End Engineer",
       tagline:
         "Engineering elegant interfaces with a focus on usability and speed.",
@@ -38,7 +48,8 @@ export function AboutSection({ onProfileClick }: AboutSectionProps) {
     },
     {
       id: "dhaval",
-      name: "Dhava Karaniya",
+      name: "Dhava ",
+      surname: "Karaniya",
       role: "Front-End Developer",
       tagline: "Building dynamic and responsive web applications",
       image: dhavalImage,
@@ -56,35 +67,26 @@ export function AboutSection({ onProfileClick }: AboutSectionProps) {
           </span>
         </h1>
       </div> */}
-      <div className="flex items-center justify-center ">
-        <div className="text-center max-w-4xl mx-auto px-4">
-          <div className="relative">
-            <h1 className="text-6xl md:text-6xl font-bold mb-8 leading-tight tracking-tight">
-              <span className="text-black bg-gradient-to-r from-black to-gray-800 bg-clip-text text-transparent drop-shadow-sm">
-                Your Imagination,
-              </span>
-              <br />
-              <span className="text-gray-400 font-light text-4xl md:text-4xl italic tracking-wider opacity-90 hover:opacity-100 transition-opacity duration-300">
-                We Build
-              </span>
-            </h1>
-
-            {/* Subtle decorative elements */}
-            <div className="absolute -top-4 -left-4 w-8 h-8 border-l-2 border-t-2 border-black opacity-20"></div>
-            <div className="absolute -bottom-4 -right-4 w-8 h-8 border-r-2 border-b-2 border-gray-400 opacity-30"></div>
-
-            {/* Animated underline */}
-            <div className="mt-6 mx-auto w-32 h-0.5 bg-gradient-to-r from-black via-gray-600 to-gray-400 animate-pulse"></div>
-          </div>
-        </div>
+      <div>
+        <MorphingText texts={["Your Imagination", "We Build"]} />
+        <Particles
+          className="absolute inset-0 z-0"
+          quantity={70}
+          ease={50}
+          color={"black"}
+          refresh
+        />
       </div>
 
       <div className="mb-16">
         <div className="text-xs font-medium text-gray-500 tracking-wider mb-4">
           // ABOUT US
         </div>
-        <h2 className="text-4xl md:text-5xl font-bold text-black leading-tight mb-6">
-          Building Web & Mobile Apps with Creativity.
+
+        <h2 className="text-4xl md:text-4xl font-bold text-black leading-tight mb-6">
+          <TextAnimate animation="slideLeft" by="character">
+            Building Web & Mobile Apps with Creativity.
+          </TextAnimate>
         </h2>
         <p className="text-gray-600 leading-relaxed max-w-3xl">
           We’re a team of passionate developers and designers with 8+ years of
@@ -115,8 +117,9 @@ export function AboutSection({ onProfileClick }: AboutSectionProps) {
               </div>
             </div>
             <div className="text-center">
-              <h3 className="text-xl font-bold text-black mb-2 group-hover:text-gray-600 transition-colors">
+              <h3 className="text-xl font-medium text-black mb-2 group-hover:text-gray-600 transition-colors">
                 {profile.name}
+                {profile.surname}
               </h3>
               <div className="text-sm font-medium text-gray-500 tracking-wider mb-3">
                 {profile.role}
@@ -172,8 +175,9 @@ export function AboutSection({ onProfileClick }: AboutSectionProps) {
           // INTRO
         </div>
         <h3 className="text-3xl md:text-4xl font-bold text-black mb-4">
-          Need a Creative Product?
-          <br />
+          <TextAnimate animation="slideLeft" by="character">
+            Need a Creative Product?
+          </TextAnimate>
           We can Help You!
         </h3>
         <p className="text-gray-600 leading-relaxed mb-8">

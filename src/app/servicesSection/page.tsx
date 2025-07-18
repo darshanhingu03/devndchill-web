@@ -1,3 +1,4 @@
+import { TextAnimate } from "@/components/magicui/text-animate";
 import {
   Code,
   Smartphone,
@@ -87,8 +88,10 @@ export function ServicesSection() {
         <div className="text-xs font-medium text-gray-500 tracking-wider mb-4">
           // SERVICES
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold text-black mb-4">
-          What We Do
+        <h1 className="text-4xl md:text-4xl font-bold text-black mb-4">
+          <TextAnimate animation="slideLeft" by="character">
+            What We Do
+          </TextAnimate>
         </h1>
         <p className="text-gray-600 max-w-2xl">
           We provide comprehensive digital solutions to help businesses grow and

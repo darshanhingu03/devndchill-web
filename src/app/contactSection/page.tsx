@@ -1,3 +1,4 @@
+import { TextAnimate } from "@/components/magicui/text-animate";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -11,8 +12,10 @@ export function ContactSection() {
         <div className="text-xs font-medium text-gray-500 tracking-wider mb-4">
           // CONTACT
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold text-black mb-4">
-          Let's Work Together
+        <h1 className="text-4xl md:text-4xl font-bold text-black mb-4">
+          <TextAnimate animation="slideLeft" by="character">
+            Let's Work Together
+          </TextAnimate>
         </h1>
         <p className="text-gray-600 max-w-2xl">
           Have a project in mind? I'd love to hear about it. Let's discuss how

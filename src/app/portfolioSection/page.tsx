@@ -1,3 +1,4 @@
+import { TextAnimate } from "@/components/magicui/text-animate";
 import Image from "next/image";
 
 export function PortfolioSection() {
@@ -38,8 +39,10 @@ export function PortfolioSection() {
         <div className="text-xs font-medium text-gray-500 tracking-wider mb-4">
           // PORTFOLIO
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold text-black mb-4">
-          Our Recent Works
+        <h1 className="text-4xl md:text-4xl font-bold text-black mb-4">
+          <TextAnimate animation="slideLeft" by="character">
+            Our Recent Works
+          </TextAnimate>
         </h1>
         <p className="text-gray-600 max-w-2xl">
           Here are some of my recent projects that showcase my skills in web

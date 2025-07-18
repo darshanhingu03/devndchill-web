@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { TextAnimate } from "@/components/magicui/text-animate";
 
 interface Experience {
   period: string;
@@ -158,8 +159,10 @@ export function ExperienceSection() {
         <div className="text-xs font-medium text-gray-500 tracking-wider mb-4">
           // EXPERIENCE
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold text-black mb-4">
-          Our Journey
+        <h1 className="text-4xl md:text-4xl font-bold text-black mb-4">
+          <TextAnimate animation="slideLeft" by="character">
+            Our Journey
+          </TextAnimate>
         </h1>
         <p className="text-gray-600 max-w-2xl">
           Combined 8+ years of professional experience in web development,
