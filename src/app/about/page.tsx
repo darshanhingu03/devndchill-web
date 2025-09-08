@@ -26,7 +26,7 @@ interface AboutSectionProps {
   onProfileClick: (profileId: string) => void;
 }
 
-export function AboutSection({ onProfileClick }: AboutSectionProps) {
+function AboutSection({ onProfileClick }: AboutSectionProps) {
   const profiles: Profile[] = [
     {
       id: "darshan",
@@ -195,4 +195,8 @@ export function AboutSection({ onProfileClick }: AboutSectionProps) {
       </div>
     </>
   );
+}
+
+export default function AboutPage() {
+  return <AboutSection onProfileClick={() => {}} />;
 }

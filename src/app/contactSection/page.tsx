@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
 
-export function ContactSection() {
+function ContactSection() {
   return (
     <div>
       <div className="mb-12">
@@ -86,3 +86,5 @@ export function ContactSection() {
     </div>
   );
 }
+
+export default ContactSection;

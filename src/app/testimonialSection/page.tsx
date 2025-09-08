@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Star } from "lucide-react";
 
-export function TestimonialSection() {
+function TestimonialSection() {
   const testimonials = [
     {
       name: "Sarah Johnson",
@@ -84,3 +84,5 @@ export function TestimonialSection() {
     </div>
   );
 }
+
+export default TestimonialSection;

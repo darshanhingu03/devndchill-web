@@ -8,7 +8,7 @@ import {
   AppWindow,
 } from "lucide-react";
 
-export function ServicesSection() {
+function ServicesSection() {
   const services = [
     {
       icon: <Code className="w-8 h-8" />,
@@ -131,3 +131,5 @@ export function ServicesSection() {
     </div>
   );
 }
+
+export default ServicesSection;

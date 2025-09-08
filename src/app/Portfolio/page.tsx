@@ -3,15 +3,13 @@
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { ScrollIndicator } from "../scrollIndicator/page";
-import { AboutSection } from "../about/page";
-import { PortfolioSection } from "../portfolioSection/page";
-import { ServicesSection } from "../servicesSection/page";
-import { TestimonialSection } from "../testimonialSection/page";
-import { ExperienceSection } from "../experienceSection/page";
-import { BlogSection } from "../BlogSection/page";
-import { ContactSection } from "../contactSection/page";
-import { IndividualProfile } from "../individualProfile/page";
+import AboutPage from "../about/page";
+import ExperienceSection from "../experienceSection/page";
+import ContactSection from "../contactSection/page";
+import IndividualProfile from "../individualProfile/page";
+import PortfolioSection from "../portfolioSection/page";
+import ScrollIndicator from "../scrollIndicator/page";
+import ServicesSection from "../servicesSection/page";
 
 export default function Portfolio() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -157,7 +155,7 @@ export default function Portfolio() {
               id="about"
               className="min-h-screen px-6 md:px-8 py-12 flex flex-col justify-center"
             >
-              <AboutSection onProfileClick={handleProfileClick} />
+              <AboutPage />
             </section>
 
             <section
@@ -209,10 +207,7 @@ export default function Portfolio() {
             </section>
           </main>
         ) : (
-          <IndividualProfile
-            profileId={currentView}
-            onBack={handleBackToMain}
-          />
+          <IndividualProfile />
         )}
       </div>
     </div>

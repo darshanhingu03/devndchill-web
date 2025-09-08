@@ -20,7 +20,7 @@ interface TeamMember {
   skills: { name: string; level: number }[];
 }
 
-export function ExperienceSection() {
+function ExperienceSection() {
   const [activeTab, setActiveTab] = useState("sanjay");
 
   const teamMembers: TeamMember[] = [
@@ -260,3 +260,5 @@ export function ExperienceSection() {
     </div>
   );
 }
+
+export default ExperienceSection;

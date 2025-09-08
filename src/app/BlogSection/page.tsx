@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function BlogSection() {
+function BlogSection() {
   const blogPosts = [
     {
       title: "Building Scalable React Applications",
@@ -143,3 +143,5 @@ export function BlogSection() {
     </div>
   );
 }
+
+export default BlogSection;

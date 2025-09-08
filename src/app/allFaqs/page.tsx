@@ -221,7 +221,7 @@ const MENTAL_HEALTH_CATEGORIES = [
   },
 ];
 
-export function MentalHealthAllFaqs() {
+function MentalHealthAllFaqs() {
   const [expandedItem, setExpandedItem] = useState({
     category: null,
     question: null,

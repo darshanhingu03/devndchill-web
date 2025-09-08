@@ -13,16 +13,14 @@ import {
   Linkedin,
   Twitter,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 interface IndividualProfileProps {
-  profileId: string;
+  profileId: any;
   onBack: () => void;
 }
 
-export function IndividualProfile({
-  profileId,
-  onBack,
-}: IndividualProfileProps) {
+export default function IndividualProfile() {
   const profiles = {
     darshan: {
       name: "Sanjay Dhamecha",
@@ -173,8 +171,8 @@ export function IndividualProfile({
       ],
     },
   };
-
-  const profile = profiles[profileId as keyof typeof profiles];
+  const router = useRouter();
+  const profile = profiles["rahul"];
 
   if (!profile) {
     return <div>Profile not found</div>;
@@ -186,7 +184,7 @@ export function IndividualProfile({
       <header className="bg-white shadow-sm">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <Button
-            onClick={onBack}
+            onClick={() => router.back()}
             variant="ghost"
             className="flex items-center gap-2 text-gray-600 hover:text-black"
           >

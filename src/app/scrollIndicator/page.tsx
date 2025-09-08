@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export function ScrollIndicator() {
+function ScrollIndicator() {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
@@ -26,3 +26,5 @@ export function ScrollIndicator() {
     </div>
   );
 }
+
+export default ScrollIndicator;

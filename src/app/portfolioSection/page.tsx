@@ -4,7 +4,7 @@ import smartPocketImage from "../../assets/smartPocket.png";
 import madSolutionImage from "../../assets/madSolution.png";
 import miracalMeImage from "../../assets/miracalMe.jpeg";
 import prazzelImage from "../../assets/prazzel.png";
-export function PortfolioSection() {
+function PortfolioSection() {
   const projects = [
     {
       title: "E-Commerce Platform",
@@ -91,3 +91,4 @@ export function PortfolioSection() {
     </div>
   );
 }
+export default PortfolioSection;
