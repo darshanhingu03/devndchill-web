@@ -1,35 +1,38 @@
 import { TextAnimate } from "@/components/magicui/text-animate";
 import Image from "next/image";
-
+import smartPocketImage from "../../assets/smartPocket.png";
+import madSolutionImage from "../../assets/madSolution.png";
+import miracalMeImage from "../../assets/miracalMe.jpeg";
+import prazzelImage from "../../assets/prazzel.png";
 export function PortfolioSection() {
   const projects = [
     {
       title: "E-Commerce Platform",
+      category: "Revolutionary Finance App",
+      description: "Transaction categorization and smart pocket allocation",
+      image: smartPocketImage,
+      technologies: ["React", "Next.js", "Postgres"],
+    },
+    {
+      title: "Event Organizer",
       category: "Web Development",
-      description: "Modern e-commerce solution with React and Node.js",
-      image: "/placeholder.svg?height=300&width=400",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      description: "Event planning and management platform",
+      image: madSolutionImage,
+      technologies: ["React", "Next.js", "Docker"],
     },
     {
-      title: "Healthcare Dashboard",
-      category: "UI/UX Design",
-      description: "Patient management system for healthcare providers",
-      image: "/placeholder.svg?height=300&width=400",
-      technologies: ["Vue.js", "Python", "PostgreSQL", "Docker"],
-    },
-    {
-      title: "Food Delivery App",
+      title: "Miracle-Me App",
       category: "Mobile Development",
-      description: "Cross-platform mobile app for food delivery service",
-      image: "/placeholder.svg?height=300&width=400",
-      technologies: ["React Native", "Firebase", "Redux", "Maps API"],
+      description: "Chat app with voice and video calls",
+      image: miracalMeImage,
+      technologies: ["React Native", "Firebase", "Redux", "WebRTC"],
     },
     {
-      title: "Education Platform",
-      category: "Full Stack",
-      description: "Online learning platform with video streaming",
-      image: "/placeholder.svg?height=300&width=400",
-      technologies: ["Next.js", "Express", "AWS", "WebRTC"],
+      title: "Prazzel Inc.",
+      category: "E-Commerce Platform",
+      description: "Online marketplace for buying and selling products",
+      image: prazzelImage,
+      technologies: ["Next.js", "Express", "AWS"],
     },
   ];
 

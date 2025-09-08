@@ -24,80 +24,6 @@ export function ContactSection() {
       </div>
 
       <div className="grid lg:grid-cols-3 gap-12">
-        {/* Contact Form */}
-        <div className="lg:col-span-2">
-          <form className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium text-black mb-2"
-                >
-                  Name *
-                </label>
-                <Input
-                  id="name"
-                  type="text"
-                  placeholder="Your name"
-                  className="w-full border-gray-300 focus:border-black focus:ring-black"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-black mb-2"
-                >
-                  Email *
-                </label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="your@email.com"
-                  className="w-full border-gray-300 focus:border-black focus:ring-black"
-                  required
-                />
-              </div>
-            </div>
-            <div>
-              <label
-                htmlFor="subject"
-                className="block text-sm font-medium text-black mb-2"
-              >
-                Subject *
-              </label>
-              <Input
-                id="subject"
-                type="text"
-                placeholder="Project subject"
-                className="w-full border-gray-300 focus:border-black focus:ring-black"
-                required
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium text-black mb-2"
-              >
-                Message *
-              </label>
-              <Textarea
-                id="message"
-                placeholder="Tell me about your project..."
-                rows={6}
-                className="w-full border-gray-300 focus:border-black focus:ring-black resize-none"
-                required
-              />
-            </div>
-            <Button
-              type="submit"
-              className="bg-black text-white hover:bg-gray-800 px-8 py-3 rounded-full font-medium transition-all duration-300"
-            >
-              Send Message
-            </Button>
-          </form>
-        </div>
-
         {/* Contact Info */}
         <div className="space-y-8">
           <div>
@@ -109,16 +35,16 @@ export function ContactSection() {
               </div>
               <div className="flex items-center">
                 <Phone className="w-5 h-5 text-gray-600 mr-3" />
-                <span className="text-gray-600">+1 (555) 123-4567</span>
+                <span className="text-gray-600">+91 9714731681</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 text-gray-600 mr-3" />
-                <span className="text-gray-600">San Francisco, CA</span>
+                <span className="text-gray-600"> India</span>
               </div>
             </div>
           </div>
 
-          <div>
+          {/* <div>
             <h3 className="text-xl font-bold text-black mb-6">Follow Me</h3>
             <div className="flex space-x-4">
               <a
@@ -140,9 +66,9 @@ export function ContactSection() {
                 <Twitter className="w-5 h-5" />
               </a>
             </div>
-          </div>
+          </div> */}
 
-          <div className="bg-white p-6 rounded-lg shadow-sm">
+          {/* <div className="bg-white p-6 rounded-lg shadow-sm">
             <h4 className="font-bold text-black mb-3">Quick Response</h4>
             <p className="text-sm text-gray-600 mb-4">
               I typically respond to messages within 24 hours. For urgent
@@ -154,7 +80,7 @@ export function ContactSection() {
             >
               Schedule a Call
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

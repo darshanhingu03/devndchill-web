@@ -71,19 +71,19 @@ export function AboutSection({ onProfileClick }: AboutSectionProps) {
         <MorphingText texts={["Your Imagination", "We Build"]} />
         <Particles
           className="absolute inset-0 z-0"
-          quantity={70}
+          quantity={50}
           ease={50}
-          color={"black"}
+          color={"pink"}
           refresh
         />
       </div>
 
-      <div className="mb-16">
-        <div className="text-xs font-medium text-gray-500 tracking-wider mb-4">
+      <div className="mb-5">
+        <div className="text-xs font-medium text-gray-500 tracking-wider mb-2">
           // ABOUT US
         </div>
 
-        <h2 className="text-4xl md:text-4xl font-bold text-black leading-tight mb-6">
+        <h2 className="text-4xl md:text-4xl font-bold text-black leading-tight mb-2">
           <TextAnimate animation="slideLeft" by="character">
             Building Web & Mobile Apps with Creativity.
           </TextAnimate>
@@ -98,11 +98,11 @@ export function AboutSection({ onProfileClick }: AboutSectionProps) {
       </div>
 
       {/* Team Profiles */}
-      <div className="grid md:grid-cols-3 gap-8 mb-16">
+      <div className="grid md:grid-cols-3 gap-8 mb-10">
         {profiles.map((profile) => (
           <div
             key={profile.id}
-            onClick={() => onProfileClick(profile.id)}
+            // onClick={() => onProfileClick(profile.id)}
             className="group cursor-pointer bg-white rounded-lg p-6 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"
           >
             <div className="relative mb-6">
@@ -128,7 +128,7 @@ export function AboutSection({ onProfileClick }: AboutSectionProps) {
                 {profile.tagline}
               </p>
             </div>
-            <div className="mt-4 text-center">
+            {/* <div className="mt-4 text-center">
               <Button
                 variant="outline"
                 size="sm"
@@ -136,13 +136,13 @@ export function AboutSection({ onProfileClick }: AboutSectionProps) {
               >
                 View Profile
               </Button>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
 
       {/* Team Statistics */}
-      <div className="grid grid-cols-3 gap-8 text-center mb-16">
+      <div className="grid grid-cols-3 gap-8 text-center mb-10">
         <div>
           <div className="text-4xl font-bold text-black mb-1">
             8<span className="text-2xl">+</span>
@@ -171,16 +171,16 @@ export function AboutSection({ onProfileClick }: AboutSectionProps) {
 
       {/* CTA Section */}
       <div className="max-w-2xl">
-        <div className="text-xs font-medium text-gray-500 tracking-wider mb-4">
+        <div className="text-xs font-medium text-gray-500 tracking-wider mb-2">
           // INTRO
         </div>
-        <h3 className="text-3xl md:text-4xl font-bold text-black mb-4">
+        <h3 className="text-3xl md:text-4xl font-bold text-black mb-2">
           <TextAnimate animation="slideLeft" by="character">
             Need a Creative Product?
           </TextAnimate>
           We can Help You!
         </h3>
-        <p className="text-gray-600 leading-relaxed mb-8">
+        <p className="text-gray-600 leading-relaxed mb-5">
           Our team has been developing sites and apps for 8+ years and we know
           for sure the main trends and directions of modern design. We have been
           visionary and reliable software engineering partners for world-class

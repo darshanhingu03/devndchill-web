@@ -163,7 +163,7 @@ export default function Portfolio() {
             <section
               ref={sectionRefs["PORTFOLIO"]}
               id="portfolio"
-              className="min-h-screen px-6 md:px-8 py-12 flex flex-col justify-center"
+              className="min-h-screen px-6 md:px-8  flex flex-col justify-center"
             >
               <PortfolioSection />
             </section>
