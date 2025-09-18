@@ -7,7 +7,7 @@ import prazzelImage from "../../assets/prazzel.png";
 function PortfolioSection() {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Finance Management App",
       category: "Revolutionary Finance App",
       description: "Transaction categorization and smart pocket allocation",
       image: smartPocketImage,
